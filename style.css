@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    background-color: #ffffff80;
+    width: 100vw;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    z-index: 10;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000000;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.header1 {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 5vw;
+    box-shadow: 0px 0px 10px;
+    z-index: 1;
+}
+
+.header1 h1 {
+    font-size: clamp(32px, 5vw, 3rem);
+}
+
+h1 span {
+    font-family: 'Unbounded', cursive;
+    color: #ef0046;
+}
+
+.header1 div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+a img {
+    width: 20px;
+}
+
+.header2 {
+    background-image: url(assets/header2-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    box-shadow: inset 0px 0px 10px;
+}
+
+.header2 img {
+    width: 60px;
+}
+
+.main-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 5vw;
+    background-color: #000000;
+}
+
+.main-about h2 {
+    font-size: clamp(26px, 5vw, 3rem);
+    background-color: #fbca2d;
+    color: #f2f2f2;
+    padding: 20px;
+}
+
+.main-about p {
+    text-align: center;
+    max-width: 600px;
+    color: #f2f2f2;
+
+}
+
+.skills {
+    padding: 5vw;
+    background-image: url(assets/header2-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px 0px 10px;
+}
+
+.skills h2 {
+    text-align: center;
+    margin: 40px 0 70px 0;
+    font-size: clamp(26px, 5vw, 3rem);
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skills-container p {
+    color: #f2f2f2;
+}
+
+.skills-container h3 {
+    color: #f2f2f2;
+}
+
+.skills-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px;
+    max-width: 600px;
+}
+
+.html {
+    background-color: #55d1b5;
+}
+
+.css {
+    background-color: #ef0046;
+}
+
+.javascript {
+    background-color: #86496a;
+}
+
+.contact {
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 10px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: clamp(26px, 5vw, 3rem);
+}
+
+.contact p {
+    text-align: center;
+}
+
+.contact-social {
+    display: flex;
+    gap: 40px;
+    margin: 40px 0 20px 0;
+}
+
+.contact-email {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-email button {
+    border: none;
+    background-color: #fbca2d;
+    padding: 20px 70px;
+    font-size: clamp(16px, 2vw, 32px);
+    font-weight: 800;
+    font-family: 'Unbounded', cursive;
+    transition: 0.5s;
+}
+
+.contact-email button:hover {
+    box-shadow: 0 0 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+footer p {
+    color: #f2f2f2;
+}
+
+@media (max-width: 850px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 580px) {
+    header {
+        grid-template-rows: 5fr 1fr;
+        grid-template-columns: none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .header1 p {
+        text-align: center;
+    }
+
+    .header1 div {
+        justify-content: center;
+    }
+
+}
